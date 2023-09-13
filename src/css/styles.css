@@ -92,6 +92,7 @@ main {
   padding: 40px;  
 }
 
+
 .container .profile-data .info {
   display: flex;  
   flex-wrap: wrap;
@@ -141,6 +142,9 @@ main {
   display: block;
   border-radius: 7px;
   transition: 0.3s ease-in-out;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
 }
 
 .container .profile-data .repositories ul li a:hover{
@@ -150,6 +154,38 @@ main {
 
 .container .profile-data.hide{
   display: none;
+}
+.container .profile-data .repositories ul li a .repo-status{
+  display: flex;
+  gap: 5px;
+  margin-top: 10px; 
+}
+
+.repo-status p{
+  background-color: #6A5ACD;
+  border-radius: 5px;
+  padding: 3px;
+}
+/* EVENTS */
+
+.container .events-data ul li{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  
+  
+}
+
+.container .events-data h2{
+ margin-bottom: 20px;
+  
+}
+
+.container .events-data ul li p:first-of-type{
+  font-size: 15px;  
+  font-weight: 700;
+  line-height: 23px;
 }
 
 @media (max-width: 1280px) {
@@ -175,6 +211,10 @@ main {
   {
     width: 100%;
   }
+
+  .container .events-data ul li{
+    display: block;
+  }
 }
 
 @media (max-width: 425px) {
@@ -193,3 +233,5 @@ main {
     padding: 0;
   }
 }
+
+
